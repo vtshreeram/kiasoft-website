@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://kiasfot.com/sitemap.xml
+
+# Disallow admin/private areas (none currently)
+# Disallow: /admin/
