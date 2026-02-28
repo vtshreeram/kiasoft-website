@@ -4,9 +4,10 @@ import type { ReactNode } from "react";
 interface PageTransitionProps {
   children: ReactNode;
   delay?: number;
+  variants?: Variants;
 }
 
-const pageVariants: Variants = {
+const defaultVariants: Variants = {
   initial: {
     opacity: 0,
     y: 20,
@@ -17,13 +18,13 @@ const pageVariants: Variants = {
   },
 };
 
-export function PageTransition({ children, delay = 0 }: PageTransitionProps) {
+export function PageTransition({ children, delay = 0, variants }: PageTransitionProps) {
   return (
     <motion.div
       initial="initial"
       animate="animate"
-      variants={pageVariants}
-      transition={{ delay, duration: 0.5, ease: "easeOut" }}
+      variants={variants || defaultVariants}
+      transition={{ delay, duration: 0.6, ease: "easeOut" }}
     >
       {children}
     </motion.div>
@@ -72,6 +73,30 @@ export const fadeInUpDelayed: Variants = {
   animate: { 
     opacity: 1, 
     y: 0,
+  }
+};
+
+export const slideInLeft: Variants = {
+  hidden: { opacity: 0, x: -100 },
+  visible: { 
+    opacity: 1, 
+    x: 0,
+  }
+};
+
+export const slideInRight: Variants = {
+  hidden: { opacity: 0, x: 100 },
+  visible: { 
+    opacity: 1, 
+    x: 0,
+  }
+};
+
+export const scaleReveal: Variants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: { 
+    opacity: 1, 
+    scale: 1,
   }
 };
 

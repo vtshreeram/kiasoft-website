@@ -5,8 +5,8 @@ import Trust from "@/components/landing/Trust";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import ContactModal from "@/components/layout/ContactModal";
 import { SectionSkeleton } from "@/components/ui/skeleton";
-import ScrollProgress from "@/components/ui/ScrollProgress";
-import { PageTransition } from "@/components/ui/PageTransition";
+import AnimatedCursor from "@/components/ui/AnimatedCursor";
+import { PageTransition, slideInLeft, slideInRight, scaleReveal } from "@/components/ui/PageTransition";
 
 const Services = lazy(() => import("@/components/landing/Services"));
 const TechStack = lazy(() => import("@/components/landing/TechStack"));
@@ -20,8 +20,8 @@ const CookieConsent = lazy(() => import("@/components/layout/CookieConsent"));
 function App() {
   return (
     <ErrorBoundary>
-      <ScrollProgress />
-      <div className="relative min-h-screen bg-background font-sans antialiased">
+      <AnimatedCursor />
+      <div className="relative min-h-screen bg-background font-sans antialiased cursor-none">
         <Navbar />
         <ContactModal />
 
@@ -33,27 +33,27 @@ function App() {
           <Trust />
 
           <Suspense fallback={<SectionSkeleton />}>
-            <PageTransition delay={0.1}>
+            <PageTransition variants={slideInLeft} delay={0.1}>
               <Services />
             </PageTransition>
 
-            <PageTransition delay={0.15}>
+            <PageTransition variants={slideInRight} delay={0.15}>
               <TechStack />
             </PageTransition>
 
-            <PageTransition delay={0.2}>
+            <PageTransition variants={scaleReveal} delay={0.2}>
               <AyushBenefits />
             </PageTransition>
 
-            <PageTransition delay={0.25}>
+            <PageTransition variants={slideInLeft} delay={0.25}>
               <Testimonials />
             </PageTransition>
 
-            <PageTransition delay={0.3}>
+            <PageTransition variants={scaleReveal} delay={0.3}>
               <FAQ />
             </PageTransition>
 
-            <PageTransition delay={0.35}>
+            <PageTransition variants={slideInRight} delay={0.35}>
               <FinalCTA />
             </PageTransition>
           </Suspense>

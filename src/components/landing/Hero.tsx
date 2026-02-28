@@ -156,27 +156,45 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0, y: -10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.5, duration: 0.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 cursor-pointer"
-        onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
-      >
-        <span className="text-xs font-medium text-slate-400 uppercase tracking-widest">Scroll</span>
+      {/* Floating Elements Animation */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
         <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-          className="w-6 h-10 rounded-full border-2 border-slate-300 flex items-start justify-center p-1"
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 1, duration: 0.8 }}
+          className="absolute bottom-20 left-[10%]"
         >
           <motion.div
-            animate={{ opacity: [1, 0], y: [0, 8] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-            className="w-1 h-2 bg-green-500 rounded-full"
+            animate={{ y: [0, -20, 0], rotate: [0, 10, 0] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            className="w-3 h-3 bg-green-400/30 rounded-full"
           />
         </motion.div>
-      </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 1.2, duration: 0.8 }}
+          className="absolute bottom-32 right-[15%]"
+        >
+          <motion.div
+            animate={{ y: [0, -30, 0], rotate: [0, -15, 0] }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+            className="w-4 h-4 bg-emerald-400/20 rounded-lg rotate-45"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 1.4, duration: 0.8 }}
+          className="absolute bottom-16 left-[30%]"
+        >
+          <motion.div
+            animate={{ y: [0, -15, 0], x: [0, 10, 0] }}
+            transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
+            className="w-2 h-2 bg-teal-400/40 rounded-full"
+          />
+        </motion.div>
+      </div>
     </section>
   );
 }
