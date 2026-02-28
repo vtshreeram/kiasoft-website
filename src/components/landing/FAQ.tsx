@@ -11,7 +11,7 @@ const faqItems = [
   {
     question: "What makes Kiasoft India's first AI Operating System for Ayush?",
     answer:
-      "Unlike generic EHRs that are retrofitted for Ayurveda, Kiasoft is built from the ground up as a neural OS specifically designed for the unique complexities of Ayush hospitals, fully automating traditional workflows from Nadi analysis to multi-phase Panchakarma logistics.",
+      "Unlike generic EHRs that are retrofitted for Ayurveda, Kiasoft is built from the ground up as a neural AyushOS specifically designed for the unique complexities of Ayush hospitals, fully automating traditional workflows from Nadi analysis to multi-phase Panchakarma logistics.",
   },
   {
     question: "How does the AI optimize complex Panchakarma protocols?",
@@ -29,14 +29,14 @@ const faqItems = [
       "Yes. The AI constantly monitors all clinical and operational workflows against Ayush Ministry and global data standards, automatically flagging discrepancies and ensuring 100% compliance without manual audits.",
   },
   {
-    question: "How long does it take to deploy the AI OS?",
+    question: "How long does it take to deploy the AyushOS?",
     answer:
       "Our rapid deployment framework allows us to integrate the AI core into your hospital operations in as little as 4-6 weeks, significantly faster than traditional legacy ERP implementations.",
   },
   {
     question: "Will the AI integrate with our existing legacy systems?",
     answer:
-      "Yes, our AI OS is designed with an API-first architecture, allowing it to act as an intelligent layer on top of your existing financial (Tally/Zoho) and diagnostic systems.",
+      "Yes, our AyushOS is designed with an API-first architecture, allowing it to act as an intelligent layer on top of your existing financial (Tally/Zoho) and diagnostic systems.",
   },
   {
     question: "Is patient data safe with AI processing?",
@@ -73,7 +73,7 @@ export default function FAQ() {
             className="mb-4 gap-1.5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-green-700 bg-green-100"
           >
             <HelpCircle className="h-3 w-3" />
-            AI OS FAQ
+            AyushOS FAQ
           </Badge>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
             Intelligent Solutions, <span className="text-green-600">Answered.</span>

@@ -58,7 +58,7 @@ export default function Hero() {
                   onClick={openContactModal}
                   className="h-14 px-10 rounded-2xl bg-green-600 text-white font-bold text-lg shadow-xl shadow-green-500/20 flex items-center justify-center gap-3 transition-colors hover:bg-green-700 cursor-pointer"
                 >
-                  Deploy AI OS
+                  Deploy AyushOS
                   <ArrowRight className="h-5 w-5" />
                 </motion.button>
                 
@@ -96,7 +96,7 @@ export default function Hero() {
             {/* Mobile: Visible simplified version */}
             <div className="lg:hidden mb-8">
               <div className="relative z-10 rounded-2xl overflow-hidden border border-slate-200 shadow-lg bg-white">
-                <img src="/images/segment-1.webp" alt="AI Ayush OS Dashboard" className="w-full h-auto" />
+                <img src="/images/segment-1.webp" alt="AI AyushOS Dashboard" className="w-full h-auto" />
               </div>
             </div>
             
@@ -104,7 +104,7 @@ export default function Hero() {
             <div className="hidden lg:block relative">
             {/* Main Dashboard Mockup - The Base Layer */}
             <div className="relative z-10 rounded-3xl overflow-hidden border border-slate-200 shadow-[0_32px_64px_-15px_rgba(0,0,0,0.1)] bg-white">
-               <img src="/images/segment-1.webp" alt="AI Ayush OS Dashboard" className="w-full h-auto" />
+               <img src="/images/segment-1.webp" alt="AI AyushOS Dashboard" className="w-full h-auto" />
             </div>
             
             {/* Floating Intelligence Layer 1 - Top Left */}
@@ -142,7 +142,7 @@ export default function Hero() {
                     <div className="h-8 w-8 rounded-lg bg-green-500 flex items-center justify-center">
                         <Zap className="h-4 w-4 text-white" />
                     </div>
-                    <span className="font-bold text-xs">OS Efficiency Gain</span>
+                    <span className="font-bold text-xs">AyushOS Efficiency Gain</span>
                 </div>
                 <div className="text-2xl font-bold text-green-400 mb-1">95.4%</div>
                 <p className="text-[10px] text-slate-400">Manual tasks automated by AI core</p>

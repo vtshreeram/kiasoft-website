@@ -53,7 +53,7 @@ export default function Contact() {
                     Enquiry Received!
                   </h3>
                   <p className="max-w-sm text-sm text-muted-foreground">
-                    Our AI consultants will reach out to you shortly to schedule your OS deployment strategy session.
+                    Our AI consultants will reach out to you shortly to schedule your AyushOS deployment strategy session.
                   </p>
                 </div>
               ) : (

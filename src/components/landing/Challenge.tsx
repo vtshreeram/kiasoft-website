@@ -11,7 +11,7 @@ export default function Challenge() {
             Ayurvedic hospitals face unique, complex operational challenges.
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-            From coordinating multi-phase Panchakarma to managing raw herbal inventory, manual workflows cost thousands of man-hours. Our AI OS collapses these efforts from <span className="text-green-600 font-bold underline">hours to minutes</span>.
+            From coordinating multi-phase Panchakarma to managing raw herbal inventory, manual workflows cost thousands of man-hours. Our AyushOS collapses these efforts from <span className="text-green-600 font-bold underline">hours to minutes</span>.
           </p>
         </div>
 

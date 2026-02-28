@@ -60,14 +60,14 @@ export default function AyushBenefits() {
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-sm font-medium mb-6">
                 <ShieldCheck className="h-4 w-4" />
-                <span>End-to-End AI OS</span>
+                <span>End-to-End AyushOS</span>
               </div>
               <h2 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl font-display leading-[1.1]">
                 Mastering Panchakarma with <br />
                 <span className="text-green-600">AI Protocol Intelligence</span>
               </h2>
               <p className="mt-6 text-lg text-slate-600 leading-relaxed">
-                Panchakarma is a complex logistical dance. Kiasoft's AI OS acts as the brain of your hospital, orchestrating treatment phases, resource allocation, and patient recovery with autonomous precision.
+                Panchakarma is a complex logistical dance. Kiasoft's AyushOS acts as the brain of your hospital, orchestrating treatment phases, resource allocation, and patient recovery with autonomous precision.
               </p>
             </div>
 

@@ -25,7 +25,7 @@ const services = [
     iconColor: "text-teal-600 bg-teal-50",
   },
   {
-    title: "AI E-Commerce OS",
+    title: "AI E-Commerce AyushOS",
     description: "Self-optimizing global stores for authentic Ayurvedic products with real-time inventory sync.",
     icon: ShoppingBag,
     className: "md:col-span-2 md:row-span-1 bg-emerald-50 border-emerald-100",
@@ -55,7 +55,7 @@ export default function Services() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-100 text-green-700 text-sm font-medium mb-4">
               <Sparkles className="h-4 w-4" />
-              <span>India's 1st End-to-End AI OS</span>
+              <span>India's 1st End-to-End AyushOS</span>
             </div>
             <h2 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl font-display leading-tight">
               Panchakarma Workflows <br />
@@ -63,7 +63,7 @@ export default function Services() {
             </h2>
           </div>
           <p className="text-lg text-slate-600 max-w-md">
-            Our uniquely designed AI OS collapses complex Ayurvedic and administrative efforts into streamlined, automated minutes.
+            Our uniquely designed AyushOS collapses complex Ayurvedic and administrative efforts into streamlined, automated minutes.
           </p>
         </div>
 

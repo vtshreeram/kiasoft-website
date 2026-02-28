@@ -3,7 +3,7 @@ import { openContactModal } from "@/components/layout/ContactModal";
 
 const footerLinks = {
   product: [
-    { label: "AI OS", href: "#services" },
+    { label: "AyushOS", href: "#services" },
     { label: "Neural Stack", href: "#tech-stack" },
     { label: "AI Advantage", href: "#why-kiasoft" },
     { label: "FAQ", href: "#faq" },
@@ -43,7 +43,7 @@ export default function Footer() {
                 onClick={openContactModal}
                 className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-green-600 hover:text-green-700 cursor-pointer"
               >
-                Deploy AI OS
+                Deploy AyushOS
                 <ArrowRight className="h-4 w-4" />
               </button>
             </div>

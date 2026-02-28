@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { openContactModal } from "@/components/layout/ContactModal";
 
 const navLinks = [
-  { label: "AI OS", href: "#services" },
+  { label: "AyushOS", href: "#services" },
   { label: "Neural Stack", href: "#tech-stack" },
   { label: "The AI Edge", href: "#why-kiasoft" },
   { label: "Deploy AI", href: "#final-cta", isCTA: true },

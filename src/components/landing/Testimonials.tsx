@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const testimonials = [
   {
     quote:
-      "As an early adopter of India's first AI OS for Ayush, our hospital's transformation has been profound. Clinical tasks that took hours are now handled autonomously in minutes.",
+      "As an early adopter of India's first AyushOS for Ayush, our hospital's transformation has been profound. Clinical tasks that took hours are now handled autonomously in minutes.",
     name: "Dr. Ananya Sharma",
     role: "Chief Physician, Veda Healing Center",
     avatar: "AS",
@@ -12,7 +12,7 @@ const testimonials = [
   },
   {
     quote:
-      "The AI-driven Panchakarma orchestration is revolutionary. We've eliminated scheduling conflicts and reduced administrative man-hours by 95% with this unique OS.",
+      "The AI-driven Panchakarma orchestration is revolutionary. We've eliminated scheduling conflicts and reduced administrative man-hours by 95% with this unique AyushOS.",
     name: "Dr. Rajiv Menon",
     role: "Director, Kerala Panchakarma Institute",
     avatar: "RM",
@@ -20,7 +20,7 @@ const testimonials = [
   },
   {
     quote:
-      "Deploying Kiasoft's end-to-end AI OS was the best decision for our pharmacy. The predictive inventory synchronizes perfectly with our inpatient therapies.",
+      "Deploying Kiasoft's end-to-end AyushOS was the best decision for our pharmacy. The predictive inventory synchronizes perfectly with our inpatient therapies.",
     name: "Priya Patel",
     role: "Founder, AyurNaturals",
     avatar: "PP",

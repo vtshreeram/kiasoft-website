@@ -32,7 +32,7 @@ export default function FinalCTA() {
                 
                 <h2 className="text-4xl md:text-5xl font-bold text-white font-display leading-[1.1] mb-6">
                   India's 1st <br />
-                  <span className="text-green-400">AI OS is Live.</span>
+                  <span className="text-green-400">AyushOS is Live.</span>
                 </h2>
                 
                 <p className="text-lg text-green-100 mb-8 max-w-lg">
@@ -46,7 +46,7 @@ export default function FinalCTA() {
                     onClick={openContactModal}
                     className="h-14 px-8 rounded-2xl bg-white text-green-900 font-bold text-lg shadow-xl hover:bg-green-50 transition-colors flex items-center justify-center gap-2 cursor-pointer"
                   >
-                    Get AI OS Now
+                    Get AyushOS Now
                     <ArrowRight className="h-5 w-5" />
                   </motion.button>
                   <div className="flex items-center gap-4 text-white/80 text-sm">

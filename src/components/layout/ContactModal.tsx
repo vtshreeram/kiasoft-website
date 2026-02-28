@@ -157,7 +157,7 @@ export default function ContactModal() {
                     className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-100 text-green-700 text-[10px] font-bold uppercase tracking-widest mb-4"
                   >
                     <Sparkles className="h-3 w-3" />
-                    <span>AI OS Deployment</span>
+                    <span>AyushOS Deployment</span>
                   </motion.div>
                   <h3 className="text-2xl font-bold text-slate-900 mb-1">Let's Build Together</h3>
                   <p className="text-slate-500 mb-6 text-sm">Scale your Ayurvedic practice with modern tech.</p>
