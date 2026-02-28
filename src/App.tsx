@@ -5,7 +5,6 @@ import Trust from "@/components/landing/Trust";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import ContactModal from "@/components/layout/ContactModal";
 import { SectionSkeleton } from "@/components/ui/skeleton";
-import AnimatedCursor from "@/components/ui/AnimatedCursor";
 import { PageTransition, slideInLeft, slideInRight, scaleReveal } from "@/components/ui/PageTransition";
 
 const Services = lazy(() => import("@/components/landing/Services"));
@@ -20,8 +19,7 @@ const CookieConsent = lazy(() => import("@/components/layout/CookieConsent"));
 function App() {
   return (
     <ErrorBoundary>
-      <AnimatedCursor />
-      <div className="relative min-h-screen bg-background font-sans antialiased cursor-none">
+      <div className="relative min-h-screen bg-background font-sans antialiased">
         <Navbar />
         <ContactModal />
 
