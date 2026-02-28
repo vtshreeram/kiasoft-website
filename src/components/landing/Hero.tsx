@@ -36,11 +36,11 @@ export default function Hero() {
                 <span className="flex h-8 w-8 items-center justify-center rounded-full bg-green-600 text-white shadow-lg">
                   <Sparkles className="h-4 w-4" />
                 </span>
-                <span className="text-sm font-bold text-green-900 tracking-tight">AI-First Operating System for Ayush</span>
+                <span className="text-sm font-bold text-green-900 tracking-tight">India's 1st AI Operating System for Ayush</span>
               </div>
 
               <h1 className="text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl font-display leading-[1.05] mb-8">
-                The AI-Powered <br />
+                The Unique AI <br />
                 <span className="bg-gradient-to-r from-green-700 via-emerald-600 to-teal-500 bg-clip-text text-transparent">
                   Operating System
                 </span> <br />
@@ -48,7 +48,7 @@ export default function Hero() {
               </h1>
 
               <p className="text-xl text-slate-600 leading-relaxed mb-10 max-w-xl">
-                Kiasoft revolutionizes Ayush healthcare with an end-to-end AI ecosystem. Automate complex workflows and reduce massive man-hour efforts from <span className="font-bold text-slate-900 underline decoration-green-500 underline-offset-4">hours to mere minutes</span>.
+                Kiasoft is India's first end-to-end AI ecosystem built exclusively for Ayurveda. Automate complex Panchakarma protocols and hospital workflows, collapsing man-hour efforts from <span className="font-bold text-slate-900 underline decoration-green-500 underline-offset-4">hours to mere minutes</span>.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-5">

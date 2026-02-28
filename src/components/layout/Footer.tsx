@@ -31,7 +31,7 @@ export default function Footer() {
                 </span>
               </a>
               <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-600">
-                The AI operating system for Ayush hospitals. Collapsing manual effort from hours to minutes.
+                India's 1st AI operating system for Ayush hospitals. Collapsing manual effort from hours to minutes.
               </p>
               <button
                 onClick={openContactModal}

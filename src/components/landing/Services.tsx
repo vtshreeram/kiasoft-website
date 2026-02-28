@@ -55,15 +55,15 @@ export default function Services() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-100 text-green-700 text-sm font-medium mb-4">
               <Sparkles className="h-4 w-4" />
-              <span>The AI Operating System</span>
+              <span>India's 1st End-to-End AI OS</span>
             </div>
             <h2 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl font-display leading-tight">
-              Hospital Workflows <br />
+              Panchakarma Workflows <br />
               <span className="text-green-600">Reimagined by AI</span>
             </h2>
           </div>
           <p className="text-lg text-slate-600 max-w-md">
-            Our end-to-end AI OS collapses complex clinical and administrative efforts into streamlined, automated minutes.
+            Our uniquely designed AI OS collapses complex Ayurvedic and administrative efforts into streamlined, automated minutes.
           </p>
         </div>
 

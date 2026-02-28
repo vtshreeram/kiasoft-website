@@ -35,10 +35,10 @@ export default function Challenge() {
         {/* Section Header */}
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Legacy systems drain your hospital's most valuable resource: Time.
+            Ayurvedic hospitals face unique, complex operational challenges.
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-            Manual Ayush workflows cost thousands of man-hours. Our AI OS collapses these efforts from <span className="text-green-600 font-bold underline">hours to minutes</span>.
+            From coordinating multi-phase Panchakarma to managing raw herbal inventory, manual workflows cost thousands of man-hours. Our AI OS collapses these efforts from <span className="text-green-600 font-bold underline">hours to minutes</span>.
           </p>
         </div>
 
@@ -51,10 +51,10 @@ export default function Challenge() {
               </div>
               <div className="flex flex-col gap-1.5">
                 <h3 className="text-base font-semibold leading-snug text-foreground sm:text-lg">
-                  Disconnected Clinical Workflows
+                  Chaotic Panchakarma Scheduling
                 </h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  Traditional EHRs create data silos that force practitioners to waste hours on redundant manual entry.
+                  Manually matching therapists, specific treatment rooms, and specialized oils for daily Purvakarma and Pradhanakarma therapies leads to critical delays.
                 </p>
               </div>
             </CardContent>
@@ -67,10 +67,10 @@ export default function Challenge() {
               </div>
               <div className="flex flex-col gap-1.5">
                 <h3 className="text-base font-semibold leading-snug text-foreground sm:text-lg">
-                  Massive Manual Admin Overhead
+                  Disconnected Clinical Diagnostics
                 </h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  Clinicians spend up to 40% of their day on administrative tasks that could be handled in minutes with AI.
+                  Vaidyas waste hours entering subjective Nadi and Prakriti assessments into generic EHRs that don't understand Ayurvedic parameters.
                 </p>
               </div>
             </CardContent>
@@ -83,10 +83,10 @@ export default function Challenge() {
               </div>
               <div className="flex flex-col gap-1.5">
                 <h3 className="text-base font-semibold leading-snug text-foreground sm:text-lg">
-                  Fragmented Patient Histories
+                  Complex Inventory Sync
                 </h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  Searching for historical patterns takes too long, delaying critical treatment decisions and care delivery.
+                  Tracking raw herbs, Kasayam batches, and custom formulations across the pharmacy and treatment rooms is a logistical nightmare without AI.
                 </p>
               </div>
             </CardContent>
@@ -99,10 +99,10 @@ export default function Challenge() {
               </div>
               <div className="flex flex-col gap-1.5">
                 <h3 className="text-base font-semibold leading-snug text-foreground sm:text-lg">
-                  Zero Real-time Operational Insights
+                  Compliance & Reporting Blindspots
                 </h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  Without an AI core, you lack the predictive data needed to optimize hospital resources and patient throughput.
+                  Without an AI core, adhering to strict Ayush Ministry data standards and generating hospital-wide operational insights requires massive manual audits.
                 </p>
               </div>
             </CardContent>

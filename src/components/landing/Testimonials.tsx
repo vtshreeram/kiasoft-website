@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const testimonials = [
   {
     quote:
-      "Kiasoft's AI Operating System transformed our hospital. Clinical tasks that took hours are now handled in minutes, allowing our Vaidyas to focus entirely on patient care.",
+      "As an early adopter of India's first AI OS for Ayush, our hospital's transformation has been profound. Clinical tasks that took hours are now handled autonomously in minutes.",
     name: "Dr. Ananya Sharma",
     role: "Chief Physician, Veda Healing Center",
     avatar: "AS",
@@ -12,7 +12,7 @@ const testimonials = [
   },
   {
     quote:
-      "The AI-driven Panchakarma scheduling is revolutionary. We've reduced administrative man-hours by 95%, collapsing complex logistics into a few simple automated clicks.",
+      "The AI-driven Panchakarma orchestration is revolutionary. We've eliminated scheduling conflicts and reduced administrative man-hours by 95% with this unique OS.",
     name: "Dr. Rajiv Menon",
     role: "Director, Kerala Panchakarma Institute",
     avatar: "RM",
@@ -20,7 +20,7 @@ const testimonials = [
   },
   {
     quote:
-      "Deploying the Kiasoft AI OS was the best decision for our pharmacy. Predictive inventory and AI-optimized global stores have scaled our operations beyond expectations.",
+      "Deploying Kiasoft's end-to-end AI OS was the best decision for our pharmacy. The predictive inventory synchronizes perfectly with our inpatient therapies.",
     name: "Priya Patel",
     role: "Founder, AyurNaturals",
     avatar: "PP",
@@ -28,7 +28,7 @@ const testimonials = [
   },
   {
     quote:
-      "The neural diagnostic engine provides precision we never thought possible in digital Ayurveda. It's truly an end-to-end OS for modern Ayush hospitals.",
+      "The neural diagnostic engine provides precision we never thought possible. It's truly the only Operating System built to understand the depths of traditional Ayurveda.",
     name: "Dr. Vikram Singh",
     role: "Head of Tele-Ayurveda, Global Ayush Network",
     avatar: "VS",

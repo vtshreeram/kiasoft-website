@@ -1,20 +1,20 @@
-import { ShieldCheck, HeartPulse, Brain, ArrowRight, CheckCircle2 } from "lucide-react";
+import { ShieldCheck, Workflow, Settings2, ArrowRight, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 import { openContactModal } from "@/components/layout/ContactModal";
 
 export default function AyushBenefits() {
   const benefits = [
     {
-      title: "AI-Powered Diagnostics",
-      description: "Neural networks analyze Nadi and Prakriti patterns, reducing assessment time by 90% while increasing clinical precision.",
-      icon: HeartPulse,
-      points: ["Neural Pulse Recognition", "Auto-Prakriti Synthesis", "Predictive Vikriti Models"],
+      title: "Adaptive Therapy Orchestration",
+      description: "AI dynamically manages the 5-fold Panchakarma phases, adjusting protocols in real-time based on daily patient vitals and recovery response.",
+      icon: Workflow,
+      points: ["Purvakarma Automation", "Pradhanakarma Sync", "Paschatkarma Tracking"],
     },
     {
-      title: "Intelligent Care Dashboards",
-      description: "AI-curated patient views that correlate lifestyle, mental, and physical metrics into actionable treatment insights.",
-      icon: Brain,
-      points: ["Real-time Dosha Analytics", "AI Srota Visualization", "Predictive Health Trends"],
+      title: "Zero-Friction Resource Logic",
+      description: "Intelligent scheduling that eliminates manual overhead by instantly matching therapists, specific herbals, and treatment rooms with 100% precision.",
+      icon: Settings2,
+      points: ["Therapist Load Balancing", "Herb & Oil Inventory Sync", "Room Occupancy AI"],
     },
   ];
 
@@ -31,14 +31,14 @@ export default function AyushBenefits() {
             >
               <img 
                 src="/images/segment-2.webp" 
-                alt="AI Ayush Operating System" 
+                alt="AI Panchakarma Protocol" 
                 className="w-full h-auto"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 to-transparent" />
               <div className="absolute bottom-10 left-10 text-white max-w-xs">
                 <div className="h-1 w-20 bg-green-500 mb-6" />
-                <h4 className="text-2xl font-bold font-display">AI Compliance Engine</h4>
-                <p className="text-green-100 text-sm mt-2 opacity-80">Autonomous monitoring ensures 100% adherence to Ayush Ministry and global data standards.</p>
+                <h4 className="text-2xl font-bold font-display">Protocol Integrity</h4>
+                <p className="text-green-100 text-sm mt-2 opacity-80">AI ensures every therapy session adheres strictly to authentic Shastra standards while optimizing hospital flow.</p>
               </div>
             </motion.div>
             
@@ -51,8 +51,8 @@ export default function AyushBenefits() {
               className="absolute -bottom-10 -right-10 z-20 bg-white p-8 rounded-3xl shadow-2xl border border-slate-100 max-w-[280px]"
             >
               <div className="text-4xl font-extrabold text-green-600 font-display">95%</div>
-              <p className="text-slate-900 font-bold mt-1">Manual Effort Cut</p>
-              <p className="text-slate-500 text-sm mt-2 leading-relaxed">Transition clinical and admin workloads from <span className="text-green-600 font-bold">hours to mere minutes</span> with AI automation.</p>
+              <p className="text-slate-900 font-bold mt-1">Protocol Efficiency</p>
+              <p className="text-slate-500 text-sm mt-2 leading-relaxed">Collapse complex Panchakarma scheduling from <span className="text-green-600 font-bold">hours to mere seconds</span> with neural orchestration.</p>
             </motion.div>
           </div>
 
@@ -60,14 +60,14 @@ export default function AyushBenefits() {
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-sm font-medium mb-6">
                 <ShieldCheck className="h-4 w-4" />
-                <span>The AI Advantage</span>
+                <span>End-to-End AI OS</span>
               </div>
               <h2 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl font-display leading-[1.1]">
-                End-to-End <br />
-                <span className="text-green-600">AI Intelligence</span>
+                Mastering Panchakarma with <br />
+                <span className="text-green-600">AI Protocol Intelligence</span>
               </h2>
               <p className="mt-6 text-lg text-slate-600 leading-relaxed">
-                Kiasoft isn't just software; it's a sentient layer for your hospital that understands the complexity of Ayurvedic healing while automating the burden of manual operations.
+                Panchakarma is a complex logistical dance. Kiasoft's AI OS acts as the brain of your hospital, orchestrating treatment phases, resource allocation, and patient recovery with autonomous precision.
               </p>
             </div>
 
@@ -105,7 +105,7 @@ export default function AyushBenefits() {
               onClick={openContactModal}
               className="inline-flex items-center gap-3 text-lg font-bold text-green-600 hover:text-green-700 cursor-pointer"
             >
-              Explore Our Full Methodology
+              Explore AI Protocol Methodology
               <ArrowRight className="h-5 w-5" />
             </motion.button>
           </div>

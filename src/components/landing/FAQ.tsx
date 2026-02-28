@@ -9,14 +9,19 @@ import { HelpCircle } from "lucide-react";
 
 const faqItems = [
   {
-    question: "How does the AI Operating System handle Ayurvedic diagnostics?",
+    question: "What makes Kiasoft India's first AI Operating System for Ayush?",
     answer:
-      "Our AI OS uses advanced neural networks to analyze traditional parameters like Nadi, Prakriti, and Vikriti. It identifies patterns across thousands of data points to provide highly precise treatment recommendations in seconds.",
+      "Unlike generic EHRs that are retrofitted for Ayurveda, Kiasoft is built from the ground up as a neural OS specifically designed for the unique complexities of Ayush hospitals, fully automating traditional workflows from Nadi analysis to multi-phase Panchakarma logistics.",
+  },
+  {
+    question: "How does the AI optimize complex Panchakarma protocols?",
+    answer:
+      "Our AI core handles the logistical nightmare of Panchakarma by dynamically scheduling therapies, auto-assigning available therapists based on skill, matching specific treatment rooms, and synchronizing real-time herb/oil inventory—eliminating human error and delays.",
   },
   {
     question: "How does AI reduce man-hour effort from hours to minutes?",
     answer:
-      "By automating repetitive administrative tasks, intelligent scheduling, and real-time inventory replenishment. Tasks that previously required manual data entry and cross-referencing are now handled autonomously by our AI core.",
+      "By autonomously orchestrating the daily Purvakarma, Pradhanakarma, and Paschatkarma phases for every patient. Tasks that previously required manual data entry, cross-referencing, and phone calls are now handled instantly by the AI core.",
   },
   {
     question: "Is the AI compliance engine really autonomous?",
@@ -24,14 +29,9 @@ const faqItems = [
       "Yes. The AI constantly monitors all clinical and operational workflows against Ayush Ministry and global data standards, automatically flagging discrepancies and ensuring 100% compliance without manual audits.",
   },
   {
-    question: "Can the AI optimize our Panchakarma protocols?",
-    answer:
-      "Absolutely. The system learns from patient recovery patterns to dynamically adjust therapy schedules, therapist assignments, and oil/herb requirements, maximizing both clinical outcomes and hospital throughput.",
-  },
-  {
     question: "How long does it take to deploy the AI OS?",
     answer:
-      "Our rapid deployment framework allows us to integrate the AI core into your hospital operations in as little as 4-6 weeks, with full enterprise-scale customization taking 3-4 months.",
+      "Our rapid deployment framework allows us to integrate the AI core into your hospital operations in as little as 4-6 weeks, significantly faster than traditional legacy ERP implementations.",
   },
   {
     question: "Will the AI integrate with our existing legacy systems?",

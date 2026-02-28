@@ -31,8 +31,8 @@ export default function FinalCTA() {
                 </motion.div>
                 
                 <h2 className="text-4xl md:text-5xl font-bold text-white font-display leading-[1.1] mb-6">
-                  Ready to deploy the <br />
-                  <span className="text-green-400">AI Operating System?</span>
+                  Deploy India's 1st <br />
+                  <span className="text-green-400">AI Operating System.</span>
                 </h2>
                 
                 <p className="text-lg text-green-100 mb-8 max-w-lg">
