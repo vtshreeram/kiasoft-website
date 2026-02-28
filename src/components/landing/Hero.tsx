@@ -20,7 +20,7 @@ export default function Hero() {
           transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
           className="absolute top-1/2 -right-24 h-[600px] w-[600px] rounded-full bg-emerald-200/40 blur-[120px]" 
         />
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10" />
+        <div className="absolute inset-0 bg-[url('/patterns/cubes.png')] opacity-10" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -91,8 +91,17 @@ export default function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden lg:block relative"
+            className="relative"
           >
+            {/* Mobile: Visible simplified version */}
+            <div className="lg:hidden mb-8">
+              <div className="relative z-10 rounded-2xl overflow-hidden border border-slate-200 shadow-lg bg-white">
+                <img src="/images/segment-1.webp" alt="AI Ayush OS Dashboard" className="w-full h-auto" />
+              </div>
+            </div>
+            
+            {/* Desktop: Full layered version */}
+            <div className="hidden lg:block relative">
             {/* Main Dashboard Mockup - The Base Layer */}
             <div className="relative z-10 rounded-3xl overflow-hidden border border-slate-200 shadow-[0_32px_64px_-15px_rgba(0,0,0,0.1)] bg-white">
                <img src="/images/segment-1.webp" alt="AI Ayush OS Dashboard" className="w-full h-auto" />
@@ -142,6 +151,7 @@ export default function Hero() {
             {/* Decorative blurs */}
             <div className="absolute -top-20 -right-20 z-0 w-64 h-64 rounded-full bg-green-500/10 blur-3xl" />
             <div className="absolute -bottom-20 -left-20 z-0 w-64 h-64 rounded-full bg-emerald-500/10 blur-3xl" />
+            </div>
           </motion.div>
         </div>
       </div>

@@ -7,7 +7,7 @@ const navLinks = [
   { label: "AI OS", href: "#services" },
   { label: "Neural Stack", href: "#tech-stack" },
   { label: "The AI Edge", href: "#why-kiasoft" },
-  { label: "Deploy AI", href: "#final-cta" },
+  { label: "Deploy AI", href: "#final-cta", isCTA: true },
 ];
 
 export default function Navbar() {
@@ -58,13 +58,11 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                onClick={(e) => {
-                  if (link.label === "Deploy AI") {
-                    e.preventDefault();
-                    openContactModal();
-                  }
-                }}
-                className="text-sm font-bold text-slate-600 hover:text-green-600 transition-colors duration-200"
+                className={`text-sm font-bold transition-colors duration-200 ${
+                  link.isCTA 
+                    ? "text-green-600 hover:text-green-700" 
+                    : "text-slate-600 hover:text-green-600"
+                }`}
               >
                 {link.label}
               </a>
@@ -104,14 +102,10 @@ export default function Navbar() {
                 <a
                   key={link.label}
                   href={link.href}
-                  onClick={(e) => {
-                    setMobileOpen(false);
-                    if (link.label === "Deploy AI") {
-                      e.preventDefault();
-                      openContactModal();
-                    }
-                  }}
-                  className="text-lg font-bold text-slate-900 hover:text-green-600 transition-colors"
+                  onClick={() => setMobileOpen(false)}
+                  className={`text-lg font-bold transition-colors ${
+                    link.isCTA ? "text-green-600" : "text-slate-900 hover:text-green-600"
+                  }`}
                 >
                   {link.label}
                 </a>

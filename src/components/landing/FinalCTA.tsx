@@ -15,7 +15,7 @@ export default function FinalCTA() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="relative z-10 bg-green-900 rounded-[3rem] p-8 md:p-20 overflow-hidden shadow-2xl">
             {/* Animated Grid Pattern */}
-            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 animate-pulse" />
+            <div className="absolute inset-0 bg-[url('/patterns/cubes.png')] opacity-10 animate-pulse" />
             
             {/* Split Layout Banner */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -31,8 +31,8 @@ export default function FinalCTA() {
                 </motion.div>
                 
                 <h2 className="text-4xl md:text-5xl font-bold text-white font-display leading-[1.1] mb-6">
-                  Deploy India's 1st <br />
-                  <span className="text-green-400">AI Operating System.</span>
+                  India's 1st <br />
+                  <span className="text-green-400">AI OS is Live.</span>
                 </h2>
                 
                 <p className="text-lg text-green-100 mb-8 max-w-lg">

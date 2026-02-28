@@ -1,33 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Unplug, Clock, FileStack, EyeOff } from "lucide-react";
 
-const painPoints = [
-  {
-    icon: Unplug,
-    title: "Fragmented systems and disconnected workflows",
-    description:
-      "Disparate tools and siloed data create gaps that slow down care delivery and introduce errors.",
-  },
-  {
-    icon: Clock,
-    title: "Delays in care delivery and patient access",
-    description:
-      "Bottlenecks in scheduling, referrals, and communication leave patients waiting longer for the care they need.",
-  },
-  {
-    icon: FileStack,
-    title: "Heavy administrative workload",
-    description:
-      "Excessive paperwork and manual processes take clinicians away from what matters most — their patients.",
-  },
-  {
-    icon: EyeOff,
-    title: "Limited visibility into patient data and outcomes",
-    description:
-      "Without unified analytics, organizations struggle to track performance and make informed decisions.",
-  },
-];
-
 export default function Challenge() {
   return (
     <section id="challenge" className="bg-muted/40 py-16 sm:py-20 lg:py-24">

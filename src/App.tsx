@@ -4,6 +4,7 @@ import Hero from "@/components/landing/Hero";
 import Trust from "@/components/landing/Trust";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import ContactModal from "@/components/layout/ContactModal";
+import { SectionSkeleton } from "@/components/ui/skeleton";
 
 const Services = lazy(() => import("@/components/landing/Services"));
 const TechStack = lazy(() => import("@/components/landing/TechStack"));
@@ -26,7 +27,7 @@ function App() {
           
           <Trust />
 
-          <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-green-600 font-bold">Deploying Kiasoft AI OS...</div>}>
+          <Suspense fallback={<SectionSkeleton />}>
             <Services />
 
             <TechStack />

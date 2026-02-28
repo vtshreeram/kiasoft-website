@@ -37,7 +37,7 @@ npm run preview      # Preview production build locally
 Tailwind CSS 4 with CSS custom properties defined in `src/index.css`:
 
 - **Design tokens**: `--primary`, `--secondary`, `--muted`, `--accent`, etc. accessed via `hsl(var(--token))`
-- **Fonts**: DM Sans (body, `font-sans`) and Sora (headings, `font-display`)
+- **Fonts**: Inter (body, `font-sans`) and Outfit (headings, `font-display`)
 - **Dark mode**: Supported via `.dark` class; variables adjust automatically
 - **Custom utilities**: `.gradient-text`, `.glass`, `.card-shadow`, `.card-shadow-hover`
 - **Animation utilities**: `.animation-delay-2000`, `.animation-delay-4000`

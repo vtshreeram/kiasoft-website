@@ -1,4 +1,4 @@
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles, Linkedin, Twitter, Instagram, Youtube, Mail, MapPin } from "lucide-react";
 import { openContactModal } from "@/components/layout/ContactModal";
 
 const footerLinks = {
@@ -12,6 +12,12 @@ const footerLinks = {
     { label: "Privacy Policy", href: "/privacy.html" },
     { label: "Terms of Service", href: "/terms.html" },
     { label: "Security", href: "/security.html" },
+  ],
+  social: [
+    { label: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/company/kiasoft" },
+    { label: "Twitter", icon: Twitter, href: "https://twitter.com/kiasoft" },
+    { label: "Instagram", icon: Instagram, href: "https://instagram.com/kiasoft" },
+    { label: "YouTube", icon: Youtube, href: "https://youtube.com/@kiasoft" },
   ],
 };
 
@@ -42,7 +48,7 @@ export default function Footer() {
               </button>
             </div>
 
-            <div className="grid grid-cols-2 gap-8 lg:col-span-3">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:col-span-3">
               <div>
                 <h3 className="text-sm font-semibold text-slate-900">Quick Links</h3>
                 <ul className="mt-4 space-y-3">
@@ -74,6 +80,34 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
+
+              <div>
+                <h3 className="text-sm font-semibold text-slate-900">Connect</h3>
+                <div className="mt-4 flex gap-4">
+                  {footerLinks.social.map((item) => (
+                    <a
+                      key={item.label}
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-lg bg-slate-100 text-slate-600 hover:bg-green-100 hover:text-green-600 transition-colors"
+                      aria-label={item.label}
+                    >
+                      <item.icon className="h-5 w-5" />
+                    </a>
+                  ))}
+                </div>
+                <div className="mt-4 space-y-2">
+                  <a href="mailto:contact@kiasoft.in" className="flex items-center gap-2 text-sm text-slate-600 hover:text-green-600 transition-colors">
+                    <Mail className="h-4 w-4" />
+                    contact@kiasoft.in
+                  </a>
+                  <p className="flex items-center gap-2 text-sm text-slate-600">
+                    <MapPin className="h-4 w-4" />
+                    Chennai, India
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -83,11 +117,6 @@ export default function Footer() {
             <p className="text-sm text-slate-500">
               &copy; {new Date().getFullYear()} Kiasoft Technologies. All rights reserved.
             </p>
-            <div className="flex items-center gap-6">
-              <a href="mailto:contact@kiasoft.in" className="text-sm text-slate-500 hover:text-green-600 transition-colors">
-                contact@kiasoft.in
-              </a>
-            </div>
           </div>
         </div>
       </div>
