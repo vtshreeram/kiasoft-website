@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ArrowRight, Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { openContactModal } from "@/components/layout/ContactModal";
 
 const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Tech Stack", href: "#tech-stack" },
-  { label: "Why Kiasfot", href: "#why-kiasfot" },
-  { label: "Contact", href: "#final-cta" },
+  { label: "AI OS", href: "#services" },
+  { label: "Neural Stack", href: "#tech-stack" },
+  { label: "The AI Edge", href: "#why-kiasoft" },
+  { label: "Deploy AI", href: "#final-cta" },
 ];
 
 export default function Navbar() {
@@ -42,13 +43,13 @@ export default function Navbar() {
           <a
             href="#"
             className="flex items-center gap-2 group"
-            aria-label="Kiasfot Technologies - Home"
+            aria-label="Kiasoft Technologies - Home"
           >
             <div className="h-10 w-10 rounded-xl bg-green-600 flex items-center justify-center text-white shadow-lg shadow-green-500/20 group-hover:rotate-12 transition-transform">
               <Sparkles className="h-6 w-6" />
             </div>
             <span className="text-xl font-bold font-display tracking-tight text-slate-900">
-              Kiasfot<span className="text-green-600">.</span>
+              Kiasoft<span className="text-green-600">.</span>
             </span>
           </a>
 
@@ -57,6 +58,12 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
+                onClick={(e) => {
+                  if (link.label === "Deploy AI") {
+                    e.preventDefault();
+                    openContactModal();
+                  }
+                }}
                 className="text-sm font-bold text-slate-600 hover:text-green-600 transition-colors duration-200"
               >
                 {link.label}
@@ -65,12 +72,12 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <a
-              href="#final-cta"
-              className="inline-flex h-11 items-center justify-center rounded-2xl bg-slate-900 px-6 text-sm font-bold text-white shadow-xl shadow-slate-900/10 transition-all duration-300 hover:bg-green-600 hover:shadow-green-500/20 hover:-translate-y-0.5"
+            <button
+              onClick={openContactModal}
+              className="inline-flex h-11 items-center justify-center rounded-2xl bg-slate-900 px-6 text-sm font-bold text-white shadow-xl shadow-slate-900/10 transition-all duration-300 hover:bg-green-600 hover:shadow-green-500/20 hover:-translate-y-0.5 cursor-pointer"
             >
               Get Started <ArrowRight className="ml-2 h-4 w-4" />
-            </a>
+            </button>
           </div>
 
           <button
@@ -97,20 +104,25 @@ export default function Navbar() {
                 <a
                   key={link.label}
                   href={link.href}
-                  onClick={() => setMobileOpen(false)}
+                  onClick={(e) => {
+                    setMobileOpen(false);
+                    if (link.label === "Deploy AI") {
+                      e.preventDefault();
+                      openContactModal();
+                    }
+                  }}
                   className="text-lg font-bold text-slate-900 hover:text-green-600 transition-colors"
                 >
                   {link.label}
                 </a>
               ))}
               <hr className="border-slate-100" />
-              <a
-                href="#final-cta"
-                onClick={() => setMobileOpen(false)}
-                className="inline-flex h-14 items-center justify-center rounded-2xl bg-green-600 px-6 text-lg font-bold text-white"
+              <button
+                onClick={() => { setMobileOpen(false); openContactModal(); }}
+                className="inline-flex h-14 items-center justify-center rounded-2xl bg-green-600 px-6 text-lg font-bold text-white cursor-pointer"
               >
                 Request a Demo
-              </a>
+              </button>
             </div>
           </motion.div>
         )}

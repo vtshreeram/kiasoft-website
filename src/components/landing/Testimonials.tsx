@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const testimonials = [
   {
     quote:
-      "Kiasfot Technologies transformed our Ayurvedic practice. Their EHR captures Prakriti and Vikriti seamlessly, completely digitizing our workflow without losing the essence of Ayurveda.",
+      "Kiasoft's AI Operating System transformed our hospital. Clinical tasks that took hours are now handled in minutes, allowing our Vaidyas to focus entirely on patient care.",
     name: "Dr. Ananya Sharma",
     role: "Chief Physician, Veda Healing Center",
     avatar: "AS",
@@ -12,7 +12,7 @@ const testimonials = [
   },
   {
     quote:
-      "Managing Panchakarma therapies used to be a logistical nightmare. This software automates scheduling and inventory tracking, saving us countless hours every week.",
+      "The AI-driven Panchakarma scheduling is revolutionary. We've reduced administrative man-hours by 95%, collapsing complex logistics into a few simple automated clicks.",
     name: "Dr. Rajiv Menon",
     role: "Director, Kerala Panchakarma Institute",
     avatar: "RM",
@@ -20,7 +20,7 @@ const testimonials = [
   },
   {
     quote:
-      "We launched our Ayurvedic e-commerce store with their custom platform. The integration with our clinic's inventory is flawless, and our global patient base loves it.",
+      "Deploying the Kiasoft AI OS was the best decision for our pharmacy. Predictive inventory and AI-optimized global stores have scaled our operations beyond expectations.",
     name: "Priya Patel",
     role: "Founder, AyurNaturals",
     avatar: "PP",
@@ -28,7 +28,7 @@ const testimonials = [
   },
   {
     quote:
-      "The telemedicine module allows us to consult with patients globally. The secure, Ayush-compliant architecture gives us total peace of mind.",
+      "The neural diagnostic engine provides precision we never thought possible in digital Ayurveda. It's truly an end-to-end OS for modern Ayush hospitals.",
     name: "Dr. Vikram Singh",
     role: "Head of Tele-Ayurveda, Global Ayush Network",
     avatar: "VS",
@@ -53,7 +53,8 @@ export default function Testimonials() {
 
           {/* Heading */}
           <h2 id="testimonials-heading" className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 font-display leading-[1.1]">
-            Trusted by leading Ayush practitioners.
+            Trusted by the world's <br />
+            <span className="text-green-600">AI-First Ayush Centers.</span>
           </h2>
         </div>
 

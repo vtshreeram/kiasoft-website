@@ -3,6 +3,7 @@ import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/landing/Hero";
 import Trust from "@/components/landing/Trust";
 import ErrorBoundary from "@/components/ErrorBoundary";
+import ContactModal from "@/components/layout/ContactModal";
 
 const Services = lazy(() => import("@/components/landing/Services"));
 const TechStack = lazy(() => import("@/components/landing/TechStack"));
@@ -18,13 +19,14 @@ function App() {
     <ErrorBoundary>
       <div className="relative min-h-screen bg-background font-sans antialiased">
         <Navbar />
+        <ContactModal />
 
         <main id="main-content" role="main">
           <Hero />
           
           <Trust />
 
-          <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-green-600">Loading Kiasfot Platforms...</div>}>
+          <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-green-600 font-bold">Deploying Kiasoft AI OS...</div>}>
             <Services />
 
             <TechStack />

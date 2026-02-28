@@ -9,39 +9,39 @@ import { HelpCircle } from "lucide-react";
 
 const faqItems = [
   {
-    question: "Is your software tailored specifically for Ayurveda and Ayush systems?",
+    question: "How does the AI Operating System handle Ayurvedic diagnostics?",
     answer:
-      "Yes. Unlike generic EHRs, our platforms natively support Ayurvedic diagnostic parameters like Prakriti, Vikriti, Nadi Pariksha, and Dhatu analysis, alongside standard medical vitals.",
+      "Our AI OS uses advanced neural networks to analyze traditional parameters like Nadi, Prakriti, and Vikriti. It identifies patterns across thousands of data points to provide highly precise treatment recommendations in seconds.",
   },
   {
-    question: "Do you offer solutions for Panchakarma management?",
+    question: "How does AI reduce man-hour effort from hours to minutes?",
     answer:
-      "Absolutely. We have specialized modules for scheduling therapies, assigning therapists, tracking specialized herb and oil inventory, and managing inpatient room assignments.",
+      "By automating repetitive administrative tasks, intelligent scheduling, and real-time inventory replenishment. Tasks that previously required manual data entry and cross-referencing are now handled autonomously by our AI core.",
   },
   {
-    question: "Can you build a custom e-commerce platform for our Ayurvedic products?",
+    question: "Is the AI compliance engine really autonomous?",
     answer:
-      "Yes, we develop scalable, secure e-commerce solutions specifically for Ayurvedic pharmacies and wellness brands, complete with batch tracking and regulatory compliance features.",
+      "Yes. The AI constantly monitors all clinical and operational workflows against Ayush Ministry and global data standards, automatically flagging discrepancies and ensuring 100% compliance without manual audits.",
   },
   {
-    question: "Are your platforms HIPAA and Ayush Ministry compliant?",
+    question: "Can the AI optimize our Panchakarma protocols?",
     answer:
-      "Security is our top priority. Our software architectures follow strict HIPAA guidelines for patient data and adhere to data standards recommended by the Ministry of Ayush.",
+      "Absolutely. The system learns from patient recovery patterns to dynamically adjust therapy schedules, therapist assignments, and oil/herb requirements, maximizing both clinical outcomes and hospital throughput.",
   },
   {
-    question: "How long does custom software development take?",
+    question: "How long does it take to deploy the AI OS?",
     answer:
-      "Implementation timelines vary. A basic clinic management system can be deployed in 4-6 weeks, while large-scale custom hospital ERPs or e-commerce platforms may take 3-4 months.",
+      "Our rapid deployment framework allows us to integrate the AI core into your hospital operations in as little as 4-6 weeks, with full enterprise-scale customization taking 3-4 months.",
   },
   {
-    question: "Will you integrate with our existing accounting or lab software?",
+    question: "Will the AI integrate with our existing legacy systems?",
     answer:
-      "Yes, we build APIs to seamlessly integrate our Ayush platforms with your existing financial systems (like Tally/Zoho), diagnostic labs, and payment gateways.",
+      "Yes, our AI OS is designed with an API-first architecture, allowing it to act as an intelligent layer on top of your existing financial (Tally/Zoho) and diagnostic systems.",
   },
   {
-    question: "What kind of support do you provide post-launch?",
+    question: "Is patient data safe with AI processing?",
     answer:
-      "We provide ongoing maintenance, secure cloud hosting, routine security updates, and dedicated technical support to ensure your practice runs smoothly.",
+      "Security is paramount. All AI processing occurs within encrypted, HIPAA-compliant environments, ensuring that while the system learns patterns, individual patient privacy is never compromised.",
   },
 ];
 
@@ -73,13 +73,13 @@ export default function FAQ() {
             className="mb-4 gap-1.5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-green-700 bg-green-100"
           >
             <HelpCircle className="h-3 w-3" />
-            FAQ
+            AI OS FAQ
           </Badge>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-            Frequently asked questions
+            Intelligent Solutions, <span className="text-green-600">Answered.</span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Learn more about our customized Ayush software development services.
+            Learn how our AI Operating System is transforming Ayush hospital management.
           </p>
         </div>
 

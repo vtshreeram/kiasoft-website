@@ -2,12 +2,11 @@ import fs from 'fs';
 import path from 'path';
 
 const REPLACEMENTS = [
-  { regex: /Kiasfot Technologies Private Limited/g, replacement: 'Kiasfot Technologies Private Limited' },
-  { regex: /Kiasfot Technologies/g, replacement: 'Kiasfot Technologies' },
-  { regex: /Kiasfot Technologies/g, replacement: 'Kiasfot Technologies' },
-  { regex: /kiasfot\.com/g, replacement: 'kiasfot.com' },
-  { regex: /kiasfot/g, replacement: 'kiasfot' },
-  { regex: /Kiasfot/g, replacement: 'Kiasfot' },
+  { regex: /Kiasfot Technologies Private Limited/g, replacement: 'Kiasoft Technologies Private Limited' },
+  { regex: /Kiasfot Technologies/g, replacement: 'Kiasoft Technologies' },
+  { regex: /kiasfot\.com/g, replacement: 'kiasoft.in' },
+  { regex: /kiasfot/g, replacement: 'kiasoft' },
+  { regex: /Kiasfot/g, replacement: 'Kiasoft' },
 ];
 
 function processDirectory(dirPath) {

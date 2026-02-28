@@ -63,8 +63,8 @@ export function useContactForm(options: UseContactFormOptions = {}) {
     try {
       const apiEndpoint = import.meta.env.VITE_CONTACT_API_ENDPOINT || "https://api.zeptomail.com/v1.1/email";
       const apiKey = import.meta.env.VITE_ZEPTO_API_KEY || "";
-      const fromEmail = import.meta.env.VITE_FROM_EMAIL || "noreply@kiasfot.com";
-      const toEmail = import.meta.env.VITE_CONTACT_EMAIL || "contact@kiasfot.com";
+      const fromEmail = import.meta.env.VITE_FROM_EMAIL || "noreply@kiasoft.in";
+      const toEmail = import.meta.env.VITE_CONTACT_EMAIL || "contact@kiasoft.in";
 
       if (apiKey) {
         const response = await fetch(apiEndpoint, {
@@ -74,8 +74,8 @@ export function useContactForm(options: UseContactFormOptions = {}) {
             "Authorization": apiKey,
           },
           body: JSON.stringify({
-            from: { address: fromEmail, name: "Kiasfot Technologies" },
-            to: [{ address: toEmail, name: "Kiasfot Technologies Team" }],
+            from: { address: fromEmail, name: "Kiasoft Technologies" },
+            to: [{ address: toEmail, name: "Kiasoft Technologies Team" }],
             subject: `New Contact Form Submission from ${data.name}`,
             html: `
               <h2>New Contact Form Submission</h2>

@@ -4,26 +4,26 @@ import { motion } from "framer-motion";
 export default function TechStack() {
   const stacks = [
     {
-      title: "Frontend & Mobile",
-      items: ["React & React Native", "Flutter", "Next.js 15"],
-      icon: Smartphone,
+      title: "AI & Machine Learning",
+      items: ["PyTorch & TensorFlow", "LLM Orchestration", "Predictive Analytics"],
+      icon: Cpu,
+      color: "from-green-600 to-emerald-700",
+    },
+    {
+      title: "Real-time Backend",
+      items: ["Node.js Microservices", "Go (High Performance)", "Python (Neural Engines)"],
+      icon: Server,
       color: "from-blue-500 to-indigo-600",
     },
     {
-      title: "Scalable Backend",
-      items: ["Node.js Microservices", "Go (High Performance)", "Python (AI/ML)"],
-      icon: Server,
-      color: "from-green-500 to-emerald-600",
-    },
-    {
-      title: "Cloud Infrastructure",
-      items: ["AWS / Google Cloud", "Kubernetes", "CI/CD Pipelines"],
+      title: "Enterprise Cloud",
+      items: ["AWS / Google Cloud", "Kubernetes", "Autoscaling AI Clusters"],
       icon: Cloud,
       color: "from-orange-500 to-red-600",
     },
     {
-      title: "Intelligent Data",
-      items: ["PostgreSQL (Reliable)", "MongoDB (Flexible)", "Redis Caching"],
+      title: "Neural Data Layer",
+      items: ["Vector Databases", "PostgreSQL (Reliable)", "MongoDB (Flexible)"],
       icon: Database,
       color: "from-purple-500 to-pink-600",
     },
@@ -34,10 +34,10 @@ export default function TechStack() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl font-display leading-tight mb-6">
-            Enterprise <span className="bg-gradient-to-r from-green-700 via-green-600 to-green-500 bg-clip-text text-transparent">Tech Stack</span> for Ayush
+            The AI <span className="bg-gradient-to-r from-green-700 via-green-600 to-green-500 bg-clip-text text-transparent">Operating System</span> Stack
           </h2>
           <p className="text-lg text-slate-600">
-            We use high-performance, secure software stacks to ensure your platforms perform flawlessly at global scale.
+            We've engineered a high-performance neural architecture designed to automate Ayush hospital workflows with extreme precision.
           </p>
         </div>
 

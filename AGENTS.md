@@ -4,7 +4,7 @@ This file provides guidance to WARP (warp.dev) when working with code in this re
 
 ## Project Overview
 
-Kiasfot Technologies landing page — a single-page marketing site for a healthcare SaaS platform. Built with React 19, TypeScript, Vite 7, and Tailwind CSS 4.
+Kiasoft Technologies landing page — a single-page marketing site for a healthcare SaaS platform. Built with React 19, TypeScript, Vite 7, and Tailwind CSS 4.
 
 ## Commands
 

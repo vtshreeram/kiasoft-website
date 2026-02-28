@@ -1,11 +1,11 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
+import { openContactModal } from "@/components/layout/ContactModal";
 
 const footerLinks = {
   product: [
-    { label: "Services", href: "#services" },
-    { label: "Tech Stack", href: "#tech-stack" },
-    { label: "Why Kiasfot", href: "#why-kiasfot" },
-    { label: "Testimonials", href: "#testimonials" },
+    { label: "AI OS", href: "#services" },
+    { label: "Neural Stack", href: "#tech-stack" },
+    { label: "AI Advantage", href: "#why-kiasoft" },
     { label: "FAQ", href: "#faq" },
   ],
   legal: [
@@ -22,25 +22,24 @@ export default function Footer() {
         <div className="py-12 lg:py-16">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-4 lg:gap-8">
             <div className="lg:col-span-1">
-              <a href="#" className="inline-block" aria-label="Kiasfot Technologies Home">
-                <img
-                  src="/logo.svg"
-                  alt="Kiasfot Technologies"
-                  width={96}
-                  height={32}
-                  className="h-8 w-auto"
-                />
+              <a href="#" className="flex items-center gap-2 group mb-4" aria-label="Kiasoft Technologies Home">
+                <div className="h-10 w-10 rounded-xl bg-green-600 flex items-center justify-center text-white shadow-lg shadow-green-500/20 group-hover:rotate-12 transition-transform">
+                  <Sparkles className="h-6 w-6" />
+                </div>
+                <span className="text-2xl font-bold font-display tracking-tight text-slate-900">
+                  Kiasoft<span className="text-green-600">.</span>
+                </span>
               </a>
               <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-600">
-                The operating system for modern healthcare. Streamline operations, reduce costs, and improve patient outcomes.
+                The AI operating system for Ayush hospitals. Collapsing manual effort from hours to minutes.
               </p>
-              <a
-                href="#final-cta"
-                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-green-600 hover:text-green-700"
+              <button
+                onClick={openContactModal}
+                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-green-600 hover:text-green-700 cursor-pointer"
               >
-                Get Started
+                Deploy AI OS
                 <ArrowRight className="h-4 w-4" />
-              </a>
+              </button>
             </div>
 
             <div className="grid grid-cols-2 gap-8 lg:col-span-3">
@@ -82,11 +81,11 @@ export default function Footer() {
         <div className="border-t border-slate-200 py-6">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-sm text-slate-500">
-              &copy; {new Date().getFullYear()} Kiasfot Technologies. All rights reserved.
+              &copy; {new Date().getFullYear()} Kiasoft Technologies. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
-              <a href="mailto:contact@kiasfot.com" className="text-sm text-slate-500 hover:text-green-600 transition-colors">
-                contact@kiasfot.com
+              <a href="mailto:contact@kiasoft.in" className="text-sm text-slate-500 hover:text-green-600 transition-colors">
+                contact@kiasoft.in
               </a>
             </div>
           </div>

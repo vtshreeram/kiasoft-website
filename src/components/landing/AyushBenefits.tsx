@@ -1,24 +1,25 @@
 import { ShieldCheck, HeartPulse, Brain, ArrowRight, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
+import { openContactModal } from "@/components/layout/ContactModal";
 
 export default function AyushBenefits() {
   const benefits = [
     {
-      title: "Data Driven Ayurveda",
-      description: "Convert subjective Nadi and Prakriti assessments into standardized, trackable data points for improved clinical outcomes.",
+      title: "AI-Powered Diagnostics",
+      description: "Neural networks analyze Nadi and Prakriti patterns, reducing assessment time by 90% while increasing clinical precision.",
       icon: HeartPulse,
-      points: ["Nadi Pattern Recognition", "Prakriti Analysis Engines", "Digital Pulse Graphs"],
+      points: ["Neural Pulse Recognition", "Auto-Prakriti Synthesis", "Predictive Vikriti Models"],
     },
     {
-      title: "Holistic Health Dashboards",
-      description: "Comprehensive patient views incorporating physical, mental, and lifestyle metrics unique to the Ayush methodology.",
+      title: "Intelligent Care Dashboards",
+      description: "AI-curated patient views that correlate lifestyle, mental, and physical metrics into actionable treatment insights.",
       icon: Brain,
-      points: ["Dosha Balance Charts", "Srota Visualization", "Lifestyle Trackers"],
+      points: ["Real-time Dosha Analytics", "AI Srota Visualization", "Predictive Health Trends"],
     },
   ];
 
   return (
-    <section id="why-kiasfot" className="py-24 bg-white relative overflow-hidden">
+    <section id="why-kiasoft" className="py-24 bg-white relative overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
@@ -30,14 +31,14 @@ export default function AyushBenefits() {
             >
               <img 
                 src="/images/segment-2.webp" 
-                alt="Ayurvedic Software Dashboard" 
+                alt="AI Ayush Operating System" 
                 className="w-full h-auto"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 to-transparent" />
               <div className="absolute bottom-10 left-10 text-white max-w-xs">
                 <div className="h-1 w-20 bg-green-500 mb-6" />
-                <h4 className="text-2xl font-bold font-display">Built for Compliance</h4>
-                <p className="text-green-100 text-sm mt-2 opacity-80">Every module adheres to the highest standards of Ayush Ministry data guidelines.</p>
+                <h4 className="text-2xl font-bold font-display">AI Compliance Engine</h4>
+                <p className="text-green-100 text-sm mt-2 opacity-80">Autonomous monitoring ensures 100% adherence to Ayush Ministry and global data standards.</p>
               </div>
             </motion.div>
             
@@ -49,9 +50,9 @@ export default function AyushBenefits() {
               transition={{ delay: 0.3 }}
               className="absolute -bottom-10 -right-10 z-20 bg-white p-8 rounded-3xl shadow-2xl border border-slate-100 max-w-[280px]"
             >
-              <div className="text-4xl font-extrabold text-green-600 font-display">40%</div>
-              <p className="text-slate-900 font-bold mt-1">Faster Diagnosis</p>
-              <p className="text-slate-500 text-sm mt-2 leading-relaxed">Integrated Nadi analysis reduces patient intake time by nearly half.</p>
+              <div className="text-4xl font-extrabold text-green-600 font-display">95%</div>
+              <p className="text-slate-900 font-bold mt-1">Manual Effort Cut</p>
+              <p className="text-slate-500 text-sm mt-2 leading-relaxed">Transition clinical and admin workloads from <span className="text-green-600 font-bold">hours to mere minutes</span> with AI automation.</p>
             </motion.div>
           </div>
 
@@ -59,14 +60,14 @@ export default function AyushBenefits() {
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-sm font-medium mb-6">
                 <ShieldCheck className="h-4 w-4" />
-                <span>Why Choose Kiasfot?</span>
+                <span>The AI Advantage</span>
               </div>
               <h2 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl font-display leading-[1.1]">
-                Bridging Ancient Wisdom & <br />
-                <span className="text-green-600">Digital Intelligence</span>
+                End-to-End <br />
+                <span className="text-green-600">AI Intelligence</span>
               </h2>
               <p className="mt-6 text-lg text-slate-600 leading-relaxed">
-                We don't just digitize clinical records; we translate the multi-dimensional nature of Ayurvedic healing into actionable digital workflows.
+                Kiasoft isn't just software; it's a sentient layer for your hospital that understands the complexity of Ayurvedic healing while automating the burden of manual operations.
               </p>
             </div>
 
@@ -99,14 +100,14 @@ export default function AyushBenefits() {
               ))}
             </div>
 
-            <motion.a
+            <motion.button
               whileHover={{ x: 10 }}
-              href="#final-cta"
-              className="inline-flex items-center gap-3 text-lg font-bold text-green-600 hover:text-green-700"
+              onClick={openContactModal}
+              className="inline-flex items-center gap-3 text-lg font-bold text-green-600 hover:text-green-700 cursor-pointer"
             >
               Explore Our Full Methodology
               <ArrowRight className="h-5 w-5" />
-            </motion.a>
+            </motion.button>
           </div>
         </div>
       </div>

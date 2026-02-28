@@ -35,42 +35,78 @@ export default function Challenge() {
         {/* Section Header */}
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Modern healthcare faces growing complexity.
+            Legacy systems drain your hospital's most valuable resource: Time.
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-            Care teams often spend more time managing systems than caring for
-            patients.
+            Manual Ayush workflows cost thousands of man-hours. Our AI OS collapses these efforts from <span className="text-green-600 font-bold underline">hours to minutes</span>.
           </p>
         </div>
 
         {/* Pain Point Cards */}
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:gap-8">
-          {painPoints.map((point) => {
-            const Icon = point.icon;
-            return (
-              <Card
-                key={point.title}
-                className="group border-border/60 bg-background transition-shadow hover:shadow-md"
-              >
-                <CardContent className="flex gap-4 p-6">
-                  {/* Icon */}
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-destructive/10 text-destructive transition-colors group-hover:bg-destructive/15">
-                    <Icon className="h-6 w-6" />
-                  </div>
+          <Card className="group border-border/60 bg-background transition-shadow hover:shadow-md">
+            <CardContent className="flex gap-4 p-6">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-destructive/10 text-destructive transition-colors group-hover:bg-destructive/15">
+                <Unplug className="h-6 w-6" />
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <h3 className="text-base font-semibold leading-snug text-foreground sm:text-lg">
+                  Disconnected Clinical Workflows
+                </h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  Traditional EHRs create data silos that force practitioners to waste hours on redundant manual entry.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
 
-                  {/* Text */}
-                  <div className="flex flex-col gap-1.5">
-                    <h3 className="text-base font-semibold leading-snug text-foreground sm:text-lg">
-                      {point.title}
-                    </h3>
-                    <p className="text-sm leading-relaxed text-muted-foreground">
-                      {point.description}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            );
-          })}
+          <Card className="group border-border/60 bg-background transition-shadow hover:shadow-md">
+            <CardContent className="flex gap-4 p-6">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-destructive/10 text-destructive transition-colors group-hover:bg-destructive/15">
+                <Clock className="h-6 w-6" />
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <h3 className="text-base font-semibold leading-snug text-foreground sm:text-lg">
+                  Massive Manual Admin Overhead
+                </h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  Clinicians spend up to 40% of their day on administrative tasks that could be handled in minutes with AI.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="group border-border/60 bg-background transition-shadow hover:shadow-md">
+            <CardContent className="flex gap-4 p-6">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-destructive/10 text-destructive transition-colors group-hover:bg-destructive/15">
+                <FileStack className="h-6 w-6" />
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <h3 className="text-base font-semibold leading-snug text-foreground sm:text-lg">
+                  Fragmented Patient Histories
+                </h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  Searching for historical patterns takes too long, delaying critical treatment decisions and care delivery.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="group border-border/60 bg-background transition-shadow hover:shadow-md">
+            <CardContent className="flex gap-4 p-6">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-destructive/10 text-destructive transition-colors group-hover:bg-destructive/15">
+                <EyeOff className="h-6 w-6" />
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <h3 className="text-base font-semibold leading-snug text-foreground sm:text-lg">
+                  Zero Real-time Operational Insights
+                </h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  Without an AI core, you lack the predictive data needed to optimize hospital resources and patient throughput.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

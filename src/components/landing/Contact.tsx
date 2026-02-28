@@ -28,33 +28,32 @@ export default function Contact() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header — centered */}
         <div className="mx-auto max-w-2xl text-center">
-          <Badge variant="secondary" className="mb-4 gap-1.5 px-3 py-1 text-xs">
+          <Badge variant="secondary" className="mb-4 gap-1.5 px-3 py-1 text-xs font-bold uppercase tracking-widest text-green-700 bg-green-100">
             <MessageSquare className="h-3 w-3" />
-            Contact Us
+            Connect with AI Experts
           </Badge>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Let&rsquo;s connect.
+            Deploy the <span className="text-green-600">AI Operating System.</span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Have questions or ready to get started? Our team is here to help.
+            Ready to collapse your hospital's manual effort from hours to minutes? Let's discuss your AI integration strategy.
           </p>
         </div>
 
         {/* Contact Form - Centered */}
         <div className="mx-auto mt-12 max-w-3xl">
-          <Card className="border-border/60 shadow-sm">
+          <Card className="border-border/60 shadow-sm rounded-[2rem]">
             <CardContent className="p-6 sm:p-8">
               {submitted ? (
                 <div className="flex flex-col items-center justify-center gap-4 py-12 text-center">
-                  <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                    <CheckCircle className="h-8 w-8 text-primary" />
+                  <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
+                    <CheckCircle className="h-8 w-8 text-green-600" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">
-                    Thank you!
+                    Enquiry Received!
                   </h3>
                   <p className="max-w-sm text-sm text-muted-foreground">
-                    Your message has been received. Our team will reach out to
-                    you shortly to schedule a consultation.
+                    Our AI consultants will reach out to you shortly to schedule your OS deployment strategy session.
                   </p>
                 </div>
               ) : (
@@ -70,9 +69,10 @@ export default function Contact() {
                         id="name"
                         name="name"
                         type="text"
-                        placeholder="Your full name"
+                        placeholder="Vaidya Rajesh"
                         required
                         autoComplete="name"
+                        className="rounded-xl"
                       />
                     </div>
 
@@ -85,44 +85,47 @@ export default function Contact() {
                         id="email"
                         name="email"
                         type="email"
-                        placeholder="you@organization.com"
+                        placeholder="vaidya@ayush.com"
                         required
                         autoComplete="email"
+                        className="rounded-xl"
                       />
                     </div>
                   </div>
 
                   {/* Organization */}
                   <div className="flex flex-col gap-2">
-                    <Label htmlFor="organization">Organization</Label>
+                    <Label htmlFor="organization">Ayush Hospital / Organization</Label>
                     <Input
                       id="organization"
                       name="organization"
                       type="text"
-                      placeholder="Your organization name (optional)"
+                      placeholder="Organization name (optional)"
                       autoComplete="organization"
+                      className="rounded-xl"
                     />
                   </div>
 
                   {/* Message */}
                   <div className="flex flex-col gap-2">
                     <Label htmlFor="message">
-                      Message <span className="text-destructive">*</span>
+                      AI Integration Needs <span className="text-destructive">*</span>
                     </Label>
                     <Textarea
                       id="message"
                       name="message"
-                      placeholder="Tell us about your needs, goals, or any questions you have..."
+                      placeholder="Tell us about your current manual workflows and where you need AI automation..."
                       rows={4}
                       required
+                      className="rounded-xl"
                     />
                   </div>
 
                   {/* Submit + privacy row */}
                   <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                    <Button type="submit" size="lg" className="gap-2">
+                    <Button type="submit" size="lg" className="gap-2 rounded-xl bg-green-600 hover:bg-green-700">
                       <Send className="h-4 w-4" />
-                      Send Message
+                      Request AI Strategy Session
                     </Button>
 
                     <p className="text-xs text-muted-foreground sm:max-w-[240px] sm:text-right">
